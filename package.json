@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "This is first\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[Dmy \u0019fir\u001b[ backend part my first project on the node.js",
-  "main": "index.js",
+  "main": "index.jsa",
   "scripts": {
     "start": "nodemon ./src/index.js"
   },
