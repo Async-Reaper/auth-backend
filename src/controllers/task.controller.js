@@ -17,6 +17,11 @@ class TasksController {
     res.json(user.rows[0]);
   }
 
+  async getAllTask(req, res) {
+    const user = await db.query("SELECT * FROM todos");
+    res.json(user)
+  }
+
   async getTasksUser(req, res) {
     const id = req.query.id;
     const user = await db.query("SELECT * FROM tasks WHERE user_id = $1", [id]);
@@ -30,6 +35,10 @@ class TasksController {
       [id]
     );
     res.json(user.rows[0]);
+  }
+
+  async test(req, res) {
+    res.json("work");
   }
 }
 
